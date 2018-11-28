@@ -34,10 +34,6 @@ $color-list: (#2384E8) (#9F7860) (#E4A813) (#2AB8CC);
     height: 1.226667rem;
     border-bottom: .026667rem solid #f3f3f3;
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: calc(100% - 0.96rem);
     padding: 0 .48rem;
     .home{
         display: inline-block;

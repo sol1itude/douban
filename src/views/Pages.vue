@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <header-bar></header-bar>
-        <router-view id="pages"></router-view>
+    <div id="pages">
+        <header>
+            <header-bar></header-bar>
+        </header>
+        <router-view class="pages"></router-view>
     </div>
 </template>
 
@@ -16,8 +18,16 @@ export default {
 </script>
 
 <style>
-    #pages{
-        position: absolute;
-        top: 1.253333rem;
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 650px;/*no*/
+        left: 50%;
+        box-sizing: border-box;
+        transform: translateX(-50%);
+    }
+    .pages{
+        padding-top: 1.253333rem;
     }
 </style>
