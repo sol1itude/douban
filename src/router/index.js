@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Pages from '../views/Pages.vue'
+import Movie from '../views/Movie.vue'
+import Book from '../views/Book.vue'
+import Broadcast from '../views/Broadcast.vue'
+import Group from '../views/Group.vue'
 
 Vue.use(Router)
 
@@ -9,8 +13,34 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/pages/'
+    },
+    {
+      path: '/pages',
+      name: 'Pages',
+      component: Pages,
+      children: [
+        {
+          path: 'movie',
+          name: 'Movie',
+          component: Movie
+        },
+        {
+          path: 'book',
+          name: 'Book',
+          component: Book
+        },
+        {
+          path: 'broadcast',
+          name: 'Broadcast',
+          component: Broadcast
+        },
+        {
+          path: 'group',
+          name: 'Group',
+          component: Group
+        }
+      ]
     }
   ]
 })

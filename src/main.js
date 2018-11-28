@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import 'lib-flexible/flexible'
+import 'reset.css'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
