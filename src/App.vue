@@ -23,5 +23,8 @@ body{
   max-width: 650px;/*no*/
   margin: 0 auto;
 }
+a{
+  text-decoration: none;
+}
 
 </style>

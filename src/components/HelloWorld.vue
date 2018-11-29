@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <button type="button" @click="axios">axios</button>
+    
   </div>
 </template>
 
@@ -9,7 +10,6 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   },
   methods: {

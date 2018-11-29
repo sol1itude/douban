@@ -3,7 +3,10 @@
         <header>
             <header-bar></header-bar>
         </header>
-        <router-view class="pages"></router-view>
+        <keep-alive>
+            <router-view class="pages"></router-view>
+        </keep-alive>
+        
     </div>
 </template>
 
@@ -26,8 +29,11 @@ export default {
         left: 50%;
         box-sizing: border-box;
         transform: translateX(-50%);
+        background-color: #fff;
+        z-index: 888;
     }
     .pages{
-        padding-top: 1.253333rem;
+        padding: 1.253333rem 0.48rem 0 0.48rem;
+        overflow: hidden;
     }
 </style>

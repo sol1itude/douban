@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <router-link class="home" :to="{path: '/'}"></router-link>
+        <router-link class="home" :to="{path: 'home'}"></router-link>
         <ul>
             <li v-for="(nav,index) in navs" :key="index" :class="nav.className">
                 <router-link :to="{path: nav.url}">{{nav.name}}</router-link>
@@ -29,6 +29,7 @@ export default {
 <style lang="scss"> 
 $color-list: (#2384E8) (#9F7860) (#E4A813) (#2AB8CC);
 .header{
+    background-color: #fff;
     justify-content: space-between;
     align-items: center;
     height: 1.226667rem;

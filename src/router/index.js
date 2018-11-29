@@ -5,6 +5,7 @@ import Movie from '../views/Movie.vue'
 import Book from '../views/Book.vue'
 import Broadcast from '../views/Broadcast.vue'
 import Group from '../views/Group.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(Router)
 
@@ -20,6 +21,15 @@ export default new Router({
       name: 'Pages',
       component: Pages,
       children: [
+        {
+          path: '/',
+          redirect: '/pages/home'
+        },
+        {
+          path: 'home',
+          name: 'Home',
+          component: Home
+        },
         {
           path: 'movie',
           name: 'Movie',
